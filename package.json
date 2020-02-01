@@ -1,0 +1,12 @@
+{
+  "name": "eslint-config-node-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "eslint": ">= 6"
+  }
+}
