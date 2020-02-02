@@ -1,12 +1,20 @@
 {
-  "name": "eslint-config-node-js",
-  "version": "1.0.0",
-  "description": "",
+  "name": "eslint-config-node-script-js",
+  "version": "1.0.1",
   "main": "index.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "peerDependencies": {
     "eslint": ">= 6"
-  }
+  },
+  "dependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-node": "^11.0.0",
+    "i": "^0.3.6",
+    "npm": "^6.13.7"
+  },
+  "devDependencies": {},
+  "description": ""
 }
