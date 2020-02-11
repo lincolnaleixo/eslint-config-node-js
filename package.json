@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-node-script-js",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "main": "index.js",
   "keywords": [],
   "author": "",
@@ -9,9 +9,11 @@
     "eslint": ">= 6"
   },
   "dependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-node": "^11.0.0",
+    "eslint": "latest",
+    "babel-eslint": "latest",
+    "eslint-config-airbnb-base": "latest",
+    "eslint-plugin-node": "latest",
+    "eslint-plugin-import": "latest",
     "i": "^0.3.6",
     "npm": "^6.13.7"
   },
