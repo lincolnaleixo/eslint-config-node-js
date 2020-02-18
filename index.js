@@ -15,6 +15,9 @@ module.exports = {
     "rules": {
         "space-infix-ops": "error",
         "require-await": "error",
+        "quotes": ["error", "single",
+            {"avoidEscape": true, "allowTemplateLiterals": true}
+        ],
         "max-len": [
             "error",
             {
