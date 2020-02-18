@@ -1,5 +1,4 @@
 module.exports = {
-
     "parser": "babel-eslint",
     "parserOptions": {
         "ecmaVersion": 2020,
@@ -181,6 +180,4 @@ module.exports = {
         "plugin:node/recommended",
         "airbnb-base"
     ]
-
-
 }
