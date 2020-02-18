@@ -129,7 +129,7 @@ module.exports = {
             "never"
         ],
         "complexity": [ "error", { "max": 7 } ],
-        "max-lines-per-function": [ "error", { "max": 15 } ],
+        "max-lines-per-function": [ "error", { "max": 30 } ],
         "max-depth": [ "error", 4 ],
         "no-multiple-empty-lines": [
             2,
