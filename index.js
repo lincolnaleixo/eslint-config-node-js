@@ -14,8 +14,8 @@ module.exports = {
     "rules": {
         "space-infix-ops": "error",
         "require-await": "error",
-        "quotes": ["error", "single",
-            {"avoidEscape": true, "allowTemplateLiterals": true}
+        "quotes": [ "error", "single",
+            { "avoidEscape": true, "allowTemplateLiterals": true }
         ],
         "max-len": [
             "error",
@@ -129,7 +129,7 @@ module.exports = {
             "never"
         ],
         "complexity": [ "error", { "max": 7 } ],
-        "max-lines-per-function": [ "error", { "max": 30 } ],
+        "max-lines-per-function": [ "error", { "max": 45 } ],
         "max-depth": [ "error", 4 ],
         "no-multiple-empty-lines": [
             2,
