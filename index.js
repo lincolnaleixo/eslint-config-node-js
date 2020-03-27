@@ -125,7 +125,7 @@ module.exports = {
         "no-else-return": ["error", { allowElseIf: false }],
         curly: ["error", "multi-line"],
         "consistent-return": "error",
-        "class-methods-use-this": ["never", { exceptMethods: ["constructor"] }],
+        "class-methods-use-this": [0, { exceptMethods: ["constructor"] }],
         "no-template-curly-in-string": "error",
         "no-return-assign": ["error", "always"],
         "padding-line-between-statements": [
