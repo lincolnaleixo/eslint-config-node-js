@@ -111,7 +111,7 @@ module.exports = {
         ],
         semi: ["error", "never"],
         complexity: ["error", { max: 7 }],
-        "max-lines-per-function": ["error", { max: 45 }],
+        "max-lines-per-function": ["error", { max: 40 }],
         "max-depth": ["error", 4],
         "no-multiple-empty-lines": [
             2,
@@ -122,25 +122,69 @@ module.exports = {
         ],
         "lines-between-class-members": ["error", "always"],
         "no-return-await": "error",
-        "no-else-return": ["error", { allowElseIf: false }],
+        "no-else-return": [
+            "error", { 
+                allowElseIf: false 
+            }
+        ],
         curly: ["error", "multi-line"],
         "consistent-return": "error",
         "class-methods-use-this": [0, { exceptMethods: ["constructor"] }],
         "no-template-curly-in-string": "error",
         "no-return-assign": ["error", "always"],
-        // "padding-line-between-statements": [
-        //     "error",
-        //     {
-        //         blankLine: "always",
-        //         prev: "*",
-        //         next: "return"
-        //     },
-        //     {
-        //         blankLine: "always",
-        //         prev: ["function", "block-like"],
-        //         next: ["function", "block-like"]
-        //     }
-        // ],
+        "padding-line-between-statements": [
+            "error",
+            {
+              "blankLine": "always",
+              "prev": [
+                "*"
+              ],
+              "next": "return"
+            },
+            {
+              "blankLine": "never",
+              "prev": [
+                "const"
+              ],
+              "next": "const"
+            },
+            {
+              "blankLine": "never",
+              "prev": [
+                "cjs-import"
+              ],
+              "next": "const"
+            },
+            {
+              "blankLine": "always",
+              "prev": [
+                "*"
+              ],
+              "next": "function"
+            },
+            {
+              "blankLine": "always",
+              "prev": [
+                "*"
+              ],
+              "next": "class"
+            }
+          ],
+          "import/newline-after-import": [
+            0
+          ],
+          "require-jsdoc": [
+            "error",
+            {
+              "require": {
+                "FunctionDeclaration": true,
+                "MethodDefinition": true,
+                "ClassDeclaration": true,
+                "ArrowFunctionExpression": true,
+                "FunctionExpression": true
+              }
+            }
+          ],
         "block-spacing": "error",
         "keyword-spacing": "error",
         "space-before-function-paren": "error",
@@ -149,9 +193,17 @@ module.exports = {
         "no-constant-condition": 0,
         "no-continue": 0,
         "no-dupe-keys": 2,
+        "padded-blocks": [
+            "error",
+            {
+              "blocks": "never"
+            },
+            {
+              "allowSingleLineBlocks": true
+            }
+          ],
         // "padded-blocks": [ "error", "never" ] // testar outro dia com o codigo ja feito
         // "padded-blocks": ["error", "always", { allowSingleLineBlocks: true }]
-        "padded-blocks": ["error", "always", { blocks: "never", allowSingleLineBlocks: true }]
     },
     extends: ["eslint:recommended", "plugin:node/recommended", "airbnb-base"]
 };
