@@ -128,19 +128,19 @@ module.exports = {
         "class-methods-use-this": [0, { exceptMethods: ["constructor"] }],
         "no-template-curly-in-string": "error",
         "no-return-assign": ["error", "always"],
-        "padding-line-between-statements": [
-            "error",
-            {
-                blankLine: "always",
-                prev: "*",
-                next: "return"
-            },
-            {
-                blankLine: "always",
-                prev: ["function", "block-like"],
-                next: ["function", "block-like"]
-            }
-        ],
+        // "padding-line-between-statements": [
+        //     "error",
+        //     {
+        //         blankLine: "always",
+        //         prev: "*",
+        //         next: "return"
+        //     },
+        //     {
+        //         blankLine: "always",
+        //         prev: ["function", "block-like"],
+        //         next: ["function", "block-like"]
+        //     }
+        // ],
         "block-spacing": "error",
         "keyword-spacing": "error",
         "space-before-function-paren": "error",
@@ -150,7 +150,8 @@ module.exports = {
         "no-continue": 0,
         "no-dupe-keys": 2,
         // "padded-blocks": [ "error", "never" ] // testar outro dia com o codigo ja feito
-        "padded-blocks": ["error", "always", { allowSingleLineBlocks: true }]
+        // "padded-blocks": ["error", "always", { allowSingleLineBlocks: true }]
+        "padded-blocks": ["error", "always", { blocks: "never", allowSingleLineBlocks: true }]
     },
     extends: ["eslint:recommended", "plugin:node/recommended", "airbnb-base"]
 };
