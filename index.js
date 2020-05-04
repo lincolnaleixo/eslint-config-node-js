@@ -31,6 +31,7 @@ module.exports = {
         ],
         "camelcase": "error",
         "node/no-unsupported-features/es-syntax": 0,
+        "no-dupe-else-if": "error",
         "object-curly-spacing": ["error", "always"],
         "object-curly-newline": [
             "error",
@@ -54,7 +55,24 @@ module.exports = {
                 allowSingleLine: true
             }
         ],
+        "no-loop-func": "off",
         "no-spaced-func": "error",
+        "prefer-destructuring": [
+          "error",
+          {
+            "VariableDeclarator": {
+              "array": false,
+              "object": true
+            },
+            "AssignmentExpression": {
+              "array": true,
+              "object": true
+            }
+          },
+          {
+            "enforceForRenamedProperties": true
+          }
+        ],
         //    "prefer-template": "always",
         "array-bracket-newline": [
             "error",
@@ -63,6 +81,7 @@ module.exports = {
                 minItems: 3
             }
         ],
+
         "array-element-newline": [
             "error",
             {
@@ -84,7 +103,7 @@ module.exports = {
         "newline-per-chained-call": [
             "error",
             {
-                ignoreChainWithDepth: 1
+                ignoreChainWithDepth: 2
             }
         ],
         "function-paren-newline": [
@@ -128,7 +147,7 @@ module.exports = {
             }
         ],
         curly: ["error", "multi-line"],
-        "consistent-return": "error",
+        "consistent-return": ["error", { "treatUndefinedAsUnspecified": true }],
         "class-methods-use-this": [0, { exceptMethods: ["constructor"] }],
         "no-template-curly-in-string": "error",
         "no-return-assign": ["error", "always"],

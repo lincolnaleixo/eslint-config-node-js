@@ -6,13 +6,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "babel-eslint": "latest",
-    "eslint": "latest",
-    "eslint-config-airbnb-base": "latest",
-    "eslint-plugin-import": "latest",
-    "eslint-plugin-node": "latest",
-    "i": "^0.3.6",
-    "npm": "^6.13.7"
+    "babel-eslint": "10.1.0",
+    "eslint": "7.0.0-rc.0",
+    "eslint-config-airbnb-base": "14.1.0",
+    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-node": "11.1.0",
+    "npm": "^6.14.4"
   },
   "devDependencies": {},
   "description": ""
