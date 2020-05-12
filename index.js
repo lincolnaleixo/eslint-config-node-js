@@ -57,22 +57,7 @@ module.exports = {
         ],
         "no-loop-func": "off",
         "no-spaced-func": "error",
-        "prefer-destructuring": [
-          "error",
-          {
-            "VariableDeclarator": {
-              "array": false,
-              "object": true
-            },
-            "AssignmentExpression": {
-              "array": true,
-              "object": true
-            }
-          },
-          {
-            "enforceForRenamedProperties": true
-          }
-        ],
+        "prefer-destructuring": "off",
         //    "prefer-template": "always",
         "array-bracket-newline": [
             "error",
