@@ -2,7 +2,10 @@
   "name": "eslint-config-node-script-js",
   "version": "1.0.14",
   "main": "index.js",
-  "keywords": [],
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
