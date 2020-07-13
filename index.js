@@ -19,7 +19,7 @@ module.exports = {
 		quotes: [
 			'error',
 			'single',
-			{avoidEscape: true, allowTemplateLiterals: true},
+			{ avoidEscape: true, allowTemplateLiterals: true },
 		],
 		'max-len': [
 			'error',
@@ -32,6 +32,7 @@ module.exports = {
 			},
 		],
 		'camelcase': 'error',
+		'no-param-reassign': ['error', { props: false }],
 		'node/no-unsupported-features/es-syntax': 0,
 		'no-dupe-else-if': 'error',
 		'object-curly-spacing': ['error', 'always'],
@@ -111,13 +112,13 @@ module.exports = {
 			'error',
 			{
 				selector:
-						'CallExpression[callee.object.name=\'console\'][callee.property.name!=/^(log|warn|error|info|trace)$/]',
+					'CallExpression[callee.object.name=\'console\'][callee.property.name!=/^(log|warn|error|info|trace)$/]',
 				message: 'Unexpected property on console object was called',
 			},
 		],
 		semi: ['error', 'never'],
-		complexity: ['error', {max: 7}],
-		'max-lines-per-function': ['error', {max: 30}],
+		complexity: ['error', { max: 7 }],
+		'max-lines-per-function': ['error', { max: 30 }],
 		'max-depth': ['error', 4],
 		'no-multiple-empty-lines': [
 			2,
@@ -134,8 +135,8 @@ module.exports = {
 			},
 		],
 		curly: ['error', 'multi-line'],
-		'consistent-return': ['error', {'treatUndefinedAsUnspecified': true}],
-		'class-methods-use-this': [0, {exceptMethods: ['constructor']}],
+		'consistent-return': ['error', { 'treatUndefinedAsUnspecified': true }],
+		'class-methods-use-this': [0, { exceptMethods: ['constructor'] }],
 		'no-template-curly-in-string': 'error',
 		'no-return-assign': ['error', 'always'],
 		'padding-line-between-statements': [
