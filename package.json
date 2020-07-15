@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-node-script-js",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "main": "index.js",
   "keywords": [
     "eslint",
@@ -13,7 +13,6 @@
     "eslint": "7.4.0",
     "eslint-plugin-import": "2.20.2",
     "eslint-plugin-node": "11.1.0"
-
   },
   "devDependencies": {},
   "description": ""
