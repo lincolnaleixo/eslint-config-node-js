@@ -200,5 +200,5 @@ module.exports = {
 		// "padded-blocks": [ "error", "never" ] // testar outro dia com o codigo ja feito
 		// "padded-blocks": ["error", "always", { allowSingleLineBlocks: true }]
 	},
-	extends: ['eslint:recommended', 'plugin:node/recommended', 'airbnb-base'],
+	extends: ['eslint:recommended', 'plugin:node/recommended'],
 }
